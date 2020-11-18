@@ -13,6 +13,7 @@ var home_component_1 = require("./views/home/home.component");
 var product_crud_component_1 = require("./views/product-crud/product-crud.component");
 var product_create_component_1 = require("./components/product/product-create/product-create.component");
 var product_update_component_1 = require("./components/product/product-update/product-update.component");
+var product_delete_component_1 = require("./components/product/product-delete/product-delete.component");
 var routes = [
     {
         path: "",
@@ -29,6 +30,10 @@ var routes = [
     {
         path: "products/update/:id",
         component: product_update_component_1.ProductUpdateComponent
+    },
+    {
+        path: "products/delete/:id",
+        component: product_delete_component_1.ProductDeleteComponent
     }
 ];
 var AppRoutingModule = /** @class */ (function () {
